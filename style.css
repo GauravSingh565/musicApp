@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 40px 50px;
+  padding: 20px 60px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   background-color: #f4f6f7;
@@ -66,6 +66,33 @@ h1 {
 h2 {
   color: #cacfd2;
 }
+.bar {
+  width: 100%;
+  margin: 10px 0px;
+}
+.bar .time {
+  display: flex;
+  justify-content: space-between;
+}
+.bar .progress {
+  margin: 10px 0px;
+  height: 10px;
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  cursor: pointer;
+}
+.bar .progress .progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+}
 
 #play {
   padding: 10px 15px;
@@ -82,17 +109,17 @@ h2 {
 
 @media (max-width: 1024px) {
   body {
-    padding-bottom: 850px !important;
+    padding-bottom: 860px !important;
   }
 }
 @media (max-width: 768px) {
   body {
-    padding-bottom: 490px !important;
+    padding-bottom: 530px !important;
   }
 }
-@media (max-width: 678px) {
+@media (max-width: 668px) {
   body {
-    padding-bottom: 270px !important;
+    padding-bottom: 230px !important;
   }
 }
 @media (max-width: 540px) {
@@ -107,11 +134,11 @@ h2 {
 }
 @media (max-width: 414px) {
   body {
-    padding-bottom: 190px !important;
+    padding-bottom: 220px !important;
   }
 }
 @media (max-width: 400px) {
   body {
-    padding-bottom: 130px !important;
+    padding-bottom: 180px !important;
   }
 }
